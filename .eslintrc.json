@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "extends": [
+    "semistandard-react"
+  ],
+  "rules": {
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "semi": [
+      2,
+      "never"
+    ]
+  }
+}

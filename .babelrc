@@ -1,0 +1,60 @@
+{
+
+    "env": {
+        "development": {
+            "presets": [
+                "next/babel"
+            ]
+        },
+        "production": {
+            "presets": [
+                "next/babel"
+            ]
+        },
+        "test": {
+            "presets": [
+                "@babel/preset-env",
+                "next/babel"
+            ]
+        }
+    },
+    "plugins": [
+        [ "transform-define-file", { file: "./.env-config.js" } ],
+        ["@babel/plugin-proposal-export-default-from"],
+        ["transform-class-properties"],
+        [
+            "css-modules-transform", {
+                "generateScopedName": "[hash:8]",
+                "extensions": [".css"]
+            }
+        ],
+        [
+            "styled-components",
+            {
+                "ssr": true,
+                "displayName": true,
+                "preprocess": false
+            }
+        ],
+        [
+            "module-resolver",
+            {
+                "root": [
+                "."
+                ],
+                "alias": {
+                "routes": "./src/routes",
+                "reduxPath": "./src/redux",
+                "hoc": "./src/hoc",
+                "lib": "./src/lib",
+                "containers": "./src/containers",
+                "components": "./src/components",
+                "constants": "./src/constants",
+                "devpool-components": "./src/devpool-components",
+                "simple-components": "./src/devpool-components/simple-components",
+                "handlebars": "handlebars/dist/handlebars.min.js"
+                }
+            }
+        ]     
+    ]
+}

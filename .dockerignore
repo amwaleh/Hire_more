@@ -1,0 +1,8 @@
+*
+!.env-config.js
+!.babelrc
+!next.config.js
+!server.js
+!src
+!package.json
+!yarn.lock
