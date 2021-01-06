@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-css-modules-transform": "^1.6.1",
     "compression": "^1.7.2",
     "eslint": "^5.3.0",
